@@ -1,0 +1,81 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.head{
+  height: 100px;
+  background: linear-gradient(#2193b0,#6dd5ed);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  -webkit-box-shadow: 0px 10px 10px 1px rgba(109,213,237,1);
+  -moz-box-shadow: 0px 10px 10px 1px rgba(109,213,237,1);
+  box-shadow: 0px 10px 10px 1px rgba(109,213,237,1);
+}
+
+.adding-new{
+  margin-top: 50px;
+  height: 30px;
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.adding-new div{
+  display: inline-block;
+}
+.adding-new div input {
+	border: none;
+	border-bottom: 0.125rem solid blue;
+	width: 100%;
+	height: 2rem;
+	font-size: 1.0625rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+.adding-new div button {
+	height: 55px;
+  width: 200px;
+  border-radius: 3rem;
+
+}
+
+.showcase{
+  background-color: #6dd5ed;
+  margin-top: 65px;
+  border-radius: 15px;
+  padding: 20px;
+  min-height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-image: url(./images/bookshelf.jpg);
+}
+
+.cards{
+  height: 300px;
+  max-width: 230px;
+  background-color: white;
+  opacity: .6;
+  border-radius: 10px;
+  transition: 0.8s;
+  overflow: hidden;
+  flex-grow: 0;
+  margin-bottom: 15px;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 50px;
+  align-items: center;
+  position: relative;
+}
