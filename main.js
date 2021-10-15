@@ -10,7 +10,9 @@ function addBooktoLibrary() {
   let name = document.querySelector(".name").value;
   let author = document.querySelector(".author").value;
   let pages = document.querySelector(".pages").value;
-  console.clear();
+  document.querySelector(".name").value = ""
+  document.querySelector(".author").value = ""
+  document.querySelector(".pages").value = ""
   let book = new Book(name, author, pages);
   myLibrary.push(book);
 
@@ -35,9 +37,11 @@ function showcase() {
     ppages.textContent = `Pages: ${e.pages}`;
 
     let btn = document.createElement("button");
-    btn.textContent = "Delete";
+    btn.innerHTML = `<i class="fa fa-trash-o" style="font-size:36px;color:red"></i>`;
     btn.setAttribute("id", `card${count}`);
+    btn.setAttribute('class', 'btn')
     btn.setAttribute("onclick", "del(this.id)");
+
 
     card.appendChild(pname);
     card.appendChild(pauthor);
@@ -52,3 +56,4 @@ function del(cardNumber) {
   myLibrary.splice(Number(cardNumber.charAt(cardNumber.length - 1)), 1);
   showcase();
 }
+
